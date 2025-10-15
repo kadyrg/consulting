@@ -1,0 +1,93 @@
+{
+  "Links": {
+    "home": "Home",
+    "about-us": "About us",
+    "contact-us": "Contact us",
+    "services": "Services",
+    "our-achievements": "Our Achievements"
+  },
+  "SocialLinks": {
+    "facebook": "Facebook",
+    "twitter": "Twitter",
+    "linkedin": "LinkedIn",
+    "instagram": "Instagram"
+  },
+  "LegalLinks": {
+    "privacy": "Privacy Policy",
+    "terms-of-service": "Terms of Service"
+  },
+  "Footer": {
+    "title": "Consulting Inc.",
+    "description": "We provide consulting services for education, work, and business opportunities in Romania.",
+    "quick-links": "Quick links",
+    "connect-with-us": "Connect with us",
+    "contacts": "Contacts",
+    "copyright": "Copyright © 2025 Consulting Inc. All rights reserved."
+  },
+  "HomePage": {
+    "title": "Welcome to Consulting Inc.",
+    "description": "Your trusted partner for studying, working, and doing business in Romania.",
+    "hero-title": "Crossing Paths: The Journey to New Horizons",
+    "hero-subtitle": "From Turkmenistan to Romania, we guide students, professionals, and entrepreneurs toward real opportunities — building futures shaped by knowledge, courage, and connection.",
+    "enter-your-email": "Enter your email",
+    "send-us-mail": "Send us mail",
+    "about-us": "About us",
+    "contact-us": "Contact us",
+    "about-title": "Guiding You Toward New Opportunities",
+    "about-subtitle": "Your reliable consulting partner in Romania",
+    "about-description": "At Consulting Inc., we help people from Turkmenistan study, work, and build successful businesses in Romania. Our mission is to make every step clear and simple — from university applications to work permits and business setup. With deep local expertise and international experience, we provide personalized support to help you adapt, grow, and achieve your goals abroad. Together, we turn your ambition into real success.",
+    "learn-more": "Learn more",
+    "why-us": "Why Us",
+    "why-us-section-title": "Your Bridge to Success in Romania",
+    "why-us-section-subtitle": "We combine local knowledge, international experience, and personal guidance to make your journey to Romania smooth, confident, and successful.",
+    "services-title": "Built for Your Growth",
+    "services-subtitle": "Helping You Study, Work, and Do Business in Romania",
+    "services-description": "We support students, professionals, and entrepreneurs from Turkmenistan in reaching their goals in Romania. Whether it’s studying at a university, finding a job, or starting a company, our consulting services simplify the process and guide you every step of the way.",
+    "ready-to-get-started": "Ready to get started?",
+    "ready-to-get-started-subtitle": "Contact us today and discover how we can help you study, work, or grow your business in Romania."
+  },
+  "ServicesPage": {
+    "title": "Our Services",
+    "description": "Comprehensive consulting solutions for studying, working, and doing business in Romania.",
+    "hero-quote": "Explore our professional consulting services",
+    "hero-title": "Helping you succeed — from education to career and business in Romania.",
+    "hero-description": "At Consulting Inc., we provide expert support at every step of your journey to Romania. Whether you’re applying to a university, searching for a job, or planning to start a business, our team offers clear guidance, reliable assistance, and personalized solutions to help you achieve your goals with confidence."
+  },
+  "AboutPage": {
+    "title": "About Us",
+    "description": "Discover our mission, vision, and the team guiding students, professionals, and entrepreneurs toward success in Romania.",
+    "hero-title": "Empowering Your Journey to Romania",
+    "hero-subtitle": "We help students, professionals, and business owners from Turkmenistan navigate education, career, and business opportunities with confidence and clarity.",
+    "our-location": "Our Location"
+  },
+  "ContactPage": {
+    "title": "Contact Us",
+    "description": "Have questions or need guidance? We're here to support you. Reach out via the form below or using our contact details.",
+    "contact-form-title": "Get in Touch",
+    "contact-form-subtitle": "We'd love to hear from you! Fill out the form and we'll respond as soon as possible.",
+    "invalid-email-error": "Please enter a valid email address",
+    "name-too-short-error": "Name must be at least 2 characters",
+    "name-too-long-error": "Name cannot exceed 50 characters",
+    "message-too-long-error": "Message cannot exceed 500 characters",
+    "email-label": "Email",
+    "email-placeholder": "Enter your email",
+    "name-label": "Name",
+    "name-placeholder": "Enter your name",
+    "message-label": "Message",
+    "message-placeholder": "Enter your message",
+    "submit-button": "Send Message",
+    "sending-button": "Sending...",
+    "success-message": "Thank you! We will get back to you shortly.",
+    "error-message": "Something went wrong. Please try again later."
+  },
+  "PrivacyPage": {
+    "title": "Privacy Policy",
+    "description": "Read our privacy policy to understand how we collect, use, and protect your personal data while using our consulting services for education, work, and business in Romania.",
+    "last-updated": "Last updated: January 1, 2024"
+  },
+  "TermsOfServicePage": {
+    "title": "Terms of Service",
+    "description": "Read our terms of service to understand the rules, responsibilities, and guidelines for using our consulting services for education, work, and business in Romania.",
+    "last-updated": "Last updated: January 1, 2024"
+  }
+}

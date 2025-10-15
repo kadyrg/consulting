@@ -1,0 +1,93 @@
+{
+  "Links": {
+    "home": "Baş sahypa",
+    "about-us": "Biz barada",
+    "contact-us": "Habarlaşmak",
+    "services": "Hyzmatlar",
+    "our-achievements": "Üstünliklerimiz"
+  },
+  "SocialLinks": {
+    "facebook": "Facebook",
+    "twitter": "Twitter",
+    "linkedin": "LinkedIn",
+    "instagram": "Instagram"
+  },
+  "LegalLinks": {
+    "privacy": "Gizlinlik syýasaty",
+    "terms-of-service": "Hyzmat şertleri"
+  },
+  "Footer": {
+    "title": "Consulting Inc.",
+    "description": "Biz Rumyniýada bilim, iş we biznes mümkinçilikleri boýunça maslahat hyzmatlaryny hödürleýäris.",
+    "quick-links": "Linkler",
+    "connect-with-us": "Biz bilen habarlaşyň",
+    "contacts": "Habarlaşmak üçin",
+    "copyright": "Awtorlyk hukugy © 2025 Consulting Inc. Ähli hukuklar goralan."
+  },
+  "HomePage": {
+    "title": "Consulting Inc.-a hoş geldiňiz",
+    "description": "Rumyniýada okaýyş, iş we biznes boýunça ynamdar maslahat hyzmatyňyz.",
+    "hero-title": "Täze Mümkinçiliklere Ýol Açýarys",
+    "hero-subtitle": "Türkmenistandan Rumyniýa çenli — biz talyplara, hünärmenlere we telekeçilere täze mümkinçilikleri tapmaga we üstünlikli geljegi gurmaga kömek edýäris.",
+    "enter-your-email": "E-poçtaňyzy giriziň",
+    "send-us-mail": "Bize ýazyň",
+    "about-us": "Biz barada",
+    "contact-us": "Habarlaşmak",
+    "about-title": "Täze mümkinçiliklere ýol görkezýäris",
+    "about-subtitle": "Rumyniýada ynamdar maslahatçyňyz",
+    "about-description": "Consulting Inc. kompaniýasy Türkmenistandan gelen adamlara Rumyniýada okamakda, işlemekde we üstünlikli biznes gurmakda goldaw berýär. Maksadymyz — her ädimi düşnükli we aňsat etmek. Uniwersitet okuwlaryndan başlap iş rugsatlaryna we kompaniýa bellige alnyşyna çenli biz şahsylaşdyrylan goldaw berýäris. Halkara tejribämiz we ýerli bilimiz bilen siziň üstünlikli geljegiňizi gurmaga kömek edýäris.",
+    "learn-more": "Has giňişleýin oka",
+    "why-us": "Näme üçin biz",
+    "why-us-section-title": "Rumyniýada üstünlik gazanmagyň köprisi",
+    "why-us-section-subtitle": "Biz ýerli tejribe, halkara bilim we şahsy goldawy birleşdirip, Rumyniýa bolan ýoluňyzy has ýeňil we üstünlikli edýäris.",
+    "services-title": "Siziň ösüşiňiz üçin döredilen",
+    "services-subtitle": "Rumyniýada okamakda, işlemekde we biznesde goldaw berýäris",
+    "services-description": "Biz Türkmenistandan gelen talyplara, hünärmenlere we telekeçilere Rumyniýada maksatlaryna ýetmekde kömek edýäris. Okuw, iş ýa-da kompaniýa açmak — biz ähli tapgyrlarda siziň bilen bile işleýäris we prosesi ýeňilleşdirýäris.",
+    "ready-to-get-started": "Başlamaga taýynmy?",
+    "ready-to-get-started-subtitle": "Biziň bilen şu gün habarlaşyň we Rumyniýada okamakda, işlemekte ýa-da biznesiňizi ösdürmekde nähili kömek edip biljegimizi biliň."
+  },
+  "ServicesPage": {
+    "title": "Hyzmatlarymyz",
+    "description": "Rumyniýada okuw, iş we biznes boýunça doly maslahat hyzmatlary.",
+    "hero-quote": "Biziň hünär taýdan taýýarlanan hyzmatlarymyz bilen tanyşyň",
+    "hero-title": "Rumyniýada bilimden iş we biznese çenli üstünlik gazanmagyňyzda goldaw berýäris.",
+    "hero-description": "Consulting Inc. kompaniýasy siziň Rumyniýadaky ähli ädimleriňizde bilermenlik bilen goldaw berýär. Uniwersitete arza bermekden başlap iş gözlemek ýa-da kompaniýa döretmek ýaly maksatlaryňyzda biz size düşnükli ugur görkezme, ynamly maslahat we şahsylaşdyrylan çözgütler hödürleýäris."
+  },
+  "AboutPage": {
+    "title": "Biz barada",
+    "description": "Missiýamyz, garaýyşymyz we Türkmenistandan gelen talyplara, hünärmenlere we telekeçilere Rumyniýada üstünlik gazanmaga ýol görkezýän toparymyz bilen tanyşyň.",
+    "hero-title": "Siziň Rumyniýadaky ýoluňyzy güýçlendirýäris",
+    "hero-subtitle": "Biz talyplara, hünärmenlere we telekeçilere Rumyniýada okuw, iş we biznes mümkinçiliklerini ynam we düşnüklilik bilen geçmäge kömek edýäris.",
+    "our-location": "Biziň ýerleşýän ýerimiz"
+  },
+  "ContactPage": {
+    "title": "Habarlaşmak",
+    "description": "Soraglaryňyz barmy ýa-da goldaw gerekmi? Biz kömek etmäge taýarys. Aşakdaky forma ýa-da habarlaşmak üçin maglumatlarymyz arkaly biz bilen habarlaşyň.",
+    "contact-form-title": "Habarlaşyň",
+    "contact-form-subtitle": "Siziň bilen habarlaşmagy isleýäris! Formany dolduryň, we biz size iň gysga wagtda jogap bereris.",
+    "invalid-email-error": "Dogry e-poçta salgyny giriziň",
+    "name-too-short-error": "Adyňyz azyndan 2 simwoldan ybarat bolmaly",
+    "name-too-long-error": "Adyňyz 50 simwoldan artyk bolmaly däl",
+    "message-too-long-error": "Habar 500 simwoldan artyk bolmaly däl",
+    "email-label": "Email",
+    "email-placeholder": "Emailiňizi giriziň",
+    "name-label": "Adyňyz",
+    "name-placeholder": "Adyňyzy giriziň",
+    "message-label": "Habar",
+    "message-placeholder": "Habaryňyzy giriziň",
+    "submit-button": "Habary iberiň",
+    "sending-button": "Iberilýär...",
+    "success-message": "Sag boluň! Biz size iň gysga wagtda jogap bereris.",
+    "error-message": "Bir näsazlyk boldy. Gaýtadan synanyşyň."
+  },
+  "PrivacyPage": {
+    "title": "Gizlinlik syýasaty",
+    "description": "Gizlinlik syýasatymyzy okaň we Rumyniýada okuw, iş we biznes boýunça maslahat hyzmatlarymyzda şahsy maglumatlaryňyzy nähili ýygnadygymyzy, ulanýandygymyzy we gorýandygymyzy düşünüň.",
+    "last-updated": "Soňky täzelik: 2024-nji ýylyň 1-nji ýanwary"
+  },
+  "TermsOfServicePage": {
+    "title": "Hyzmat şertleri",
+    "description": "Hyzmat şertlerimizi okaň we Rumyniýada okuw, iş we biznes boýunça maslahat hyzmatlarymyzdan peýdalanmagyň düzgünlerini, jogapkärçiliklerini we görkezmelerini düşünüň.",
+    "last-updated": "Soňky täzelik: 2024-nji ýylyň 1-nji ýanwary"
+  }
+}
