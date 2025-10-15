@@ -1,4 +1,4 @@
-import { getPrivacyData } from "@/features/privacy";
+import { getPrivacyData } from "@/shared/model/get-privacy-data";
 import { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
 

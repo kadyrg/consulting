@@ -1,5 +1,4 @@
 import { Marquee, MarqueeContent, MarqueeItem } from "@/shared/ui/marquee";
-import { getServicesData } from "@/features/services";
 import { Link } from "@/shared/i18n/navigation";
 import { Button } from "@/shared/ui/kit/button";
 import { Input } from "@/shared/ui/kit/input";
@@ -9,6 +8,7 @@ import { getTranslations } from "next-intl/server";
 import Image from "next/image";
 import { getWhyUsData } from "@/shared/model/get-why-us-data";
 import { getMarqueeData } from "@/shared/model/get-marquee-data";
+import { getServicesData } from "@/shared/model/get-services-data";
 
 export async function generateMetadata(): Promise<Metadata> {
   const t = await getTranslations("HomePage");

@@ -1,6 +1,5 @@
-import { getServicesData } from "@/features/services";
 import { Badge } from "@/shared/ui/kit/badge";
-import { getLocale, getTranslations } from "next-intl/server";
+import { getTranslations } from "next-intl/server";
 import Image from "next/image";
 import {
   Accordion,
@@ -9,34 +8,8 @@ import {
   AccordionTrigger,
 } from "@/shared/ui/kit/accordion";
 import { Metadata } from "next";
-
-const FAQ_DATA_EN = [
-  {
-    key: "item-1",
-    question: "Lorem ipsum",
-    answer: "Lorem ipsum",
-  },
-  {
-    key: "item-2",
-    question: "Lorem ipsum",
-    answer: "Lorem ipsum",
-  },
-  {
-    key: "item-3",
-    question: "Lorem ipsum",
-    answer: "Lorem ipsum",
-  },
-  {
-    key: "item-4",
-    question: "Lorem ipsum",
-    answer: "Lorem ipsum",
-  },
-  {
-    key: "item-5",
-    question: "Lorem ipsum",
-    answer: "Lorem ipsum",
-  },
-];
+import { getServicesData } from "@/shared/model/get-services-data";
+import { getFAQData } from "@/shared/model/get-faq-data";
 
 export async function generateMetadata(): Promise<Metadata> {
   const t = await getTranslations("ServicesPage");
@@ -45,12 +18,6 @@ export async function generateMetadata(): Promise<Metadata> {
     title: t("title"),
     description: t("description"),
   };
-}
-
-async function getFAQData() {
-  const locale = await getLocale();
-
-  return locale === "en" ? FAQ_DATA_EN : FAQ_DATA_EN;
 }
 
 export default async function ServicesPage() {

@@ -1,4 +1,4 @@
-import { getTermsOfServiceData } from "@/features/terms-of-service";
+import { getTermsOfServiceData } from "@/shared/model/get-terms-of-service-data";
 import { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
 
