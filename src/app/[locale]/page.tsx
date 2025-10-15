@@ -9,6 +9,12 @@ import Image from "next/image";
 import { getWhyUsData } from "@/shared/model/get-why-us-data";
 import { getMarqueeData } from "@/shared/model/get-marquee-data";
 import { getServicesData } from "@/shared/model/get-services-data";
+import {
+  Heading1,
+  Heading3,
+  Heading4,
+  Paragraph,
+} from "@/shared/ui/kit/typography";
 
 export async function generateMetadata(): Promise<Metadata> {
   const t = await getTranslations("HomePage");
@@ -29,15 +35,15 @@ export default async function HomePage() {
     <>
       <section className="h-130 relative md:h-150">
         <div className="px-5 w-full h-full flex flex-col items-center justify-center text-background absolute z-10 ">
-          <h1 className="scroll-m-20 text-center text-4xl max-w-xl mx-auto font-extrabold tracking-tight text-balance">
-            {t("hero-title")}
-          </h1>
-          <p className="leading-7 text-center mx-auto max-w-xl [&:not(:first-child)]:mt-6">
+          <Heading1>{t("hero-title")}</Heading1>
+          <Paragraph className="text-center text-background">
             {t("hero-subtitle")}
-          </p>
-
+          </Paragraph>
           <div className="relative w-full max-w-sm mt-8 flex gap-3 justify-center">
-            <Input placeholder={t("enter-your-email")} className="h-10 bg-background w-full" />
+            <Input
+              placeholder={t("enter-your-email")}
+              className="h-10 bg-background w-full"
+            />
             <Button size={"sm"} className="absolute top-1 right-1 !pr-2">
               {t("send-us-mail")}
               <ChevronRight />
@@ -47,24 +53,31 @@ export default async function HomePage() {
             <Button size={"sm"} asChild>
               <Link href={"/contact"}>{t("contact-us")}</Link>
             </Button>
-            <Button variant={"outline"} size={"sm"} className="text-foreground" asChild>
+            <Button
+              variant={"outline"}
+              size={"sm"}
+              className="text-foreground"
+              asChild
+            >
               <Link href={"/about"}>{t("about-us")}</Link>
             </Button>
           </div>
         </div>
-        <Image src={"/hero-image.jpg"} width={1920} height={1080} alt={""} className="absolute top-0 object-cover h-full brightness-30" />
+        <Image
+          src={"/hero-image.jpg"}
+          width={1920}
+          height={1080}
+          alt={""}
+          className="absolute top-0 object-cover h-full brightness-30"
+        />
       </section>
       <section className="px-5 bg-accent">
         <div className="max-w-6xl py-16 mx-auto">
-          <span className="text-blue-700 font-medium">
+          <Paragraph className="text-primary font-semibold">
             {t("services-title")}
-          </span>
-          <h3 className="scroll-m-20 text-2xl sm:text-3xl max-w-xl font-semibold tracking-tight mt-4">
-            {t("services-subtitle")}
-          </h3>
-          <p className="text-sm sm:text-base max-w-2xl text-accent-foreground leading-6 [&:not(:first-child)]:mt-6">
-            {t("services-description")}
-          </p>
+          </Paragraph>
+          <Heading3>{t("services-subtitle")}</Heading3>
+          <Paragraph>{t("services-description")}</Paragraph>
           <div className="py-8 grid grid-cols-1 sm:grid-rows-6 gap-4 lg:gap-6 sm:grid-cols-2">
             <div className="sm:row-span-5 flex items-center md:p-4">
               <ServiceCard
@@ -92,22 +105,20 @@ export default async function HomePage() {
       </section>
       <section className="px-5">
         <div className="max-w-6xl py-20 mx-auto">
-          <span className="text-blue-700 font-medium">{t("why-us")}</span>
-          <h3 className="scroll-m-20 text-2xl sm:text-3xl max-w-xl font-semibold tracking-tight mt-4">
-            {t("why-us-section-title")}
-          </h3>
-          <p className="text-sm sm:text-base max-w-2xl text-accent-foreground leading-6 [&:not(:first-child)]:mt-6">
-            {t("why-us-section-subtitle")}
-          </p>
+          <Paragraph className="text-primary font-semibold">
+            {t("why-us")}
+          </Paragraph>
+          <Heading3>{t("why-us-section-title")}</Heading3>
+          <Paragraph>{t("why-us-section-subtitle")}</Paragraph>
           <div className="pt-18 grid grid-cols-2 md:grid-cols-4 gap-4 lg:gap-10">
             {whyUsData.map((item) => (
               <div key={item.key}>
-                <span className="font-bold text-xl text-primary">
+                <span className="font-bold text-xl md:text-2xl text-primary block w-full whitespace-pre-line">
                   {item.title}
                 </span>
-                <p className="text-sm sm:text-base max-w-2xl font-medium text-accent-foreground leading-6 [&:not(:first-child)]:mt-3">
+                <Paragraph className="max-w-2xl font-medium text-accent-foreground">
                   {item.description}
-                </p>
+                </Paragraph>
               </div>
             ))}
           </div>
@@ -121,9 +132,9 @@ export default async function HomePage() {
       >
         <div className="px-5">
           <div className="max-w-6xl mx-auto pt-16 py-6">
-            <span className="text-blue-700 font-medium">
+            <Paragraph className="text-primary font-semibold">
               {t("about-title")}
-            </span>
+            </Paragraph>
           </div>
         </div>
         <Marquee className="bg-background/70">
@@ -133,9 +144,7 @@ export default async function HomePage() {
                 key={item.key}
                 className="w-90 flex items-start pt-5 pb-8 gap-5"
               >
-                <span className="text-primary font-bold">
-                  {item.title}
-                </span>
+                <span className="text-primary font-bold">{item.title}</span>
                 <p className="font-medium pr-4 text-sm text-accent-foreground max-w-[300]">
                   {item.description}
                 </p>
@@ -145,12 +154,8 @@ export default async function HomePage() {
         </Marquee>
         <div className="px-5">
           <div className="max-w-6xl pt-3 pb-25 mx-auto">
-            <h3 className="scroll-m-20 text-2xl sm:text-3xl max-w-xl font-semibold tracking-tight mt-4">
-              {t("about-subtitle")}
-            </h3>
-            <p className="text-sm sm:text-base max-w-2xl text-accent-foreground leading-6 [&:not(:first-child)]:mt-6">
-              {t("about-description")}
-            </p>
+            <Heading3>{t("about-subtitle")}</Heading3>
+            <Paragraph>{t("about-description")}</Paragraph>
             <Link
               href={"/about"}
               className="inline-flex items-center gap-1.5 hover:underline mt-3 text-primary text-sm"
@@ -160,15 +165,10 @@ export default async function HomePage() {
           </div>
         </div>
       </section>
-
       <section className="px-5">
         <div className="max-w-6xl mx-auto py-20">
-          <h3 className="scroll-m-20 text-2xl sm:text-3xl max-w-xl font-semibold tracking-tight mt-4">
-            {t("ready-to-get-started")}
-          </h3>
-          <p className="sm:text-lg font-medium max-w-md text-accent-foreground leading-6 [&:not(:first-child)]:mt-6">
-            {t("ready-to-get-started-subtitle")}
-          </p>
+          <Heading3>{t("ready-to-get-started")}</Heading3>
+          <Paragraph>{t("ready-to-get-started-subtitle")}</Paragraph>
           <div>
             <Button size={"sm"} className="mt-6 !pr-2" asChild>
               <Link href={"/contact"}>
@@ -201,12 +201,8 @@ function ServiceCard({
         className="rounded-xl bg-accent"
       />
       <div className="p-2">
-        <h4 className="scroll-m-20 text-xl sm:text-2xl font-semibold tracking-tight mt-4">
-          {title}
-        </h4>
-        <p className="leading-7 [&:not(:first-child)]:mt-3 line-clamp-3 pr-4">
-          {description}
-        </p>
+        <Heading4>{title}</Heading4>
+        <Paragraph className="line-clamp-3 pr-4">{description}</Paragraph>
       </div>
     </div>
   );

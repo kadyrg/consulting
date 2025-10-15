@@ -104,5 +104,9 @@ const SERVICES_DATA_TM = [
 export async function getServicesData() {
   const locale = await getLocale();
 
-  return locale === "tm" ? SERVICES_DATA_TM : locale === "ru" ? SERVICES_DATA_RU : SERVICES_DATA_EN;
+  return locale === "tm"
+    ? SERVICES_DATA_TM
+    : locale === "ru"
+      ? SERVICES_DATA_RU
+      : SERVICES_DATA_EN;
 }

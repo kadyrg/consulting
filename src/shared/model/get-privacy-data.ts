@@ -320,5 +320,9 @@ const PRIVACY_DATA_TM = [
 
 export async function getPrivacyData() {
   const locale = await getLocale();
-  return locale === "tm" ? PRIVACY_DATA_TM : locale === "ru" ? PRIVACY_DATA_RU : PRIVACY_DATA_EN;
+  return locale === "tm"
+    ? PRIVACY_DATA_TM
+    : locale === "ru"
+      ? PRIVACY_DATA_RU
+      : PRIVACY_DATA_EN;
 }

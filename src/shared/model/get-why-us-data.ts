@@ -3,25 +3,29 @@ import { getLocale } from "next-intl/server";
 const WHY_US_DATA_EN = [
   {
     key: "personalized-guidance",
-    title: "Personalized Guidance",
+    title: `Personalized
+            Guidance`,
     description:
       "We provide tailored advice and step-by-step support to help you achieve your education, career, or business goals in Romania.",
   },
   {
     key: "local-expertise",
-    title: "Local Expertise",
+    title: `Local
+            Expertise`,
     description:
       "Our deep understanding of Romanian systems ensures you navigate legal, academic, and business processes with confidence.",
   },
   {
     key: "international-experience",
-    title: "International Experience",
+    title: `International
+            Experience`,
     description:
       "We combine global insights with local knowledge to help Turkmen students, professionals, and entrepreneurs succeed abroad.",
   },
   {
     key: "end-to-end-support",
-    title: "End-to-End Support",
+    title: `End-to-End
+            Support`,
     description:
       "From planning and applications to settling in Romania, we assist every step of the way for a smooth and successful journey.",
   },
@@ -84,5 +88,9 @@ const WHY_US_DATA_TM = [
 export async function getWhyUsData() {
   const locale = await getLocale();
 
-  return locale === "tm" ? WHY_US_DATA_TM : locale === "ru" ? WHY_US_DATA_RU : WHY_US_DATA_EN;
+  return locale === "tm"
+    ? WHY_US_DATA_TM
+    : locale === "ru"
+      ? WHY_US_DATA_RU
+      : WHY_US_DATA_EN;
 }

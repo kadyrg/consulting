@@ -10,6 +10,7 @@ import {
 import { Metadata } from "next";
 import { getServicesData } from "@/shared/model/get-services-data";
 import { getFAQData } from "@/shared/model/get-faq-data";
+import { Heading1, Heading3, Paragraph } from "@/shared/ui/kit/typography";
 
 export async function generateMetadata(): Promise<Metadata> {
   const t = await getTranslations("ServicesPage");
@@ -29,13 +30,13 @@ export default async function ServicesPage() {
     <>
       <section className="px-5">
         <div className="max-w-6xl py-16 mx-auto flex flex-col items-center">
-          <Badge>{t("hero-quote")}</Badge>
-          <h1 className="scroll-m-20 mt-4 text-center text-4xl max-w-xl mx-auto font-extrabold tracking-tight text-balance text-foreground/80">
+          <Badge className="text-base">{t("hero-quote")}</Badge>
+          <Heading1 className="mt-6">
             {t("hero-title")}
-          </h1>
-          <p className="leading-7 text-center mx-auto max-w-xl [&:not(:first-child)]:mt-6 text-accent-foreground">
+          </Heading1>
+          <Paragraph className="text-center">
             {t("hero-description")}
-          </p>
+          </Paragraph>
         </div>
       </section>
       <section>
@@ -46,15 +47,15 @@ export default async function ServicesPage() {
           >
             <div className="max-w-6xl mx-auto pt-16 flex flex-col">
               <div className="max-w-2xl">
-                <span className="text-blue-700 font-medium">
+                <Paragraph className="text-primary font-semibold">
                   {service.field}
-                </span>
-                <h3 className="scroll-m-20 text-2xl sm:text-3xl max-w-xl font-semibold tracking-tight mt-4">
+                </Paragraph>
+                <Heading3>
                   {service.title}
-                </h3>
-                <p className="text-sm sm:text-base max-w-2xl text-accent-foreground leading-6 [&:not(:first-child)]:mt-6">
+                </Heading3>
+                <Paragraph>
                   {service.description}
-                </p>
+                </Paragraph>
                 <Image
                   src={service.image}
                   width={672}
@@ -69,9 +70,9 @@ export default async function ServicesPage() {
       </section>
       <section className="px-5">
         <div className="max-w-6xl mx-auto py-16 flex flex-col items-center gap-6">
-          <span className="text-blue-700 font-medium ">
+          <Paragraph className="text-primary font-semibold">
             Frequently asked questions
-          </span>
+          </Paragraph>
           <Accordion
             type="single"
             collapsible
@@ -79,8 +80,12 @@ export default async function ServicesPage() {
           >
             {faqData.map((item) => (
               <AccordionItem key={item.key} value={item.key}>
-                <AccordionTrigger>{item.question}</AccordionTrigger>
-                <AccordionContent>{item.answer}</AccordionContent>
+                <AccordionTrigger><Paragraph className="font-semibold">{item.question}</Paragraph></AccordionTrigger>
+                <AccordionContent>
+                  <Paragraph>
+                    {item.answer}
+                  </Paragraph>
+                </AccordionContent>
               </AccordionItem>
             ))}
           </Accordion>
